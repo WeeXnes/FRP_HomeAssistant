@@ -1,0 +1,24 @@
+name: "FRP (Fast Reverse Proxy)"
+description: "Expose internal services (like Home Assistant) securely to the internet using FRP"
+version: "0.60.0"
+slug: "frp"
+init: false
+arch:
+  - amd64
+network:
+  mode: host
+options:
+  server_addr: "<YOUR_FRP_SERVER_IP>"
+  server_port: 2113
+  token: "<YOUR_FRP_TOKEN>"
+  local_ip: "<actual local ip - e.g. 192.XXX...>"
+  local_port: 8123
+  remote_port: 8123
+
+schema:
+  server_addr: str
+  server_port: int
+  token: str
+  local_ip: str
+  local_port: int
+  remote_port: int
