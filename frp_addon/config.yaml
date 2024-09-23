@@ -9,7 +9,7 @@ network:
   mode: host
 options:
   server_addr: "<YOUR_FRP_SERVER_IP>"
-  server_port: 2113
+  server_port: 7000
   token: "<YOUR_FRP_TOKEN>"
   local_ip: "<actual local ip - e.g. 192.XXX...>"
   local_port: 8123
